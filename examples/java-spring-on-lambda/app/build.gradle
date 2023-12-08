@@ -1,0 +1,26 @@
+plugins {
+    id 'application'
+    id 'org.springframework.boot' version '3.1.6'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation libs.guava
+    implementation 'com.amazonaws.serverless:aws-serverless-java-container-springboot3:2.0.0-M2'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    mainClass = 'java.spring.on.lambda.App'
+}
