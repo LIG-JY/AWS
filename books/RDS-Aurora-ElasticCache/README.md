@@ -12,4 +12,4 @@
 
 ### [RDS & Aurora Proxy](https://www.notion.so/f224e53b9ab9411caa7508226a9e2275?pvs=21)
 
-### [Elastic Cache](https://www.notion.so/d7beeef895044402b397455fe7298940?pvs=21)
+### [Elastic Cache](./elastic-cache.md)
